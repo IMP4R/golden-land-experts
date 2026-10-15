@@ -1,0 +1,12 @@
+{
+  "format": "goldenland-behavior-map/1",
+  "generated_at": "2026-10-01T09:32:43.985Z",
+  "project_root": "/Users/user0/golden-land-new/dsh-witches-clone/packages/experimental/witches-runtime",
+  "stack": "web-js",
+  "totals": {
+    "nodes": 0,
+    "files_scanned": 32,
+    "duplicate_labels": 0
+  },
+  "nodes": []
+}

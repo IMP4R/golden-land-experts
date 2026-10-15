@@ -1,0 +1,18 @@
+# witches-experts bundle patch: host tools + Memory Broker. Client half is
+# served from dsh.client. Mount only from the isolated 3280 profile.
+# RLM mounts separately so native tools and Code Mode do not double-register.
+- insert:
+    - id: witches-experts
+      name: 'witches-experts'
+    - id: witches-durable-history
+      name: 'witches-experts/history'
+      config:
+        root: !!js dshHomePath('memory/history')
+    - id: witches-rlm-code
+      name: 'witches-experts/rlm'
+      config:
+        codeMode: true
+        root: !!js dshHomePath('memory/rlm')
+        limits:
+          maxLookups: 20
+          maxChars: 2000

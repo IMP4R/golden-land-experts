@@ -1,0 +1,8 @@
+# Host-only RLM reader, journal and programmatic expert spawn.
+- insert:
+    - id: witches-rlm
+      name: 'witches-experts/rlm'
+      config:
+        limits:
+          maxLookups: 20
+          maxChars: 2000
